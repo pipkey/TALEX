@@ -32,8 +32,15 @@
     <header class="container">
       <!-- логотип -->
       <div class="logo">
-        <img src="assets/BLACK_LOGO.png" alt="TALEX логотип" />
+        <img
+          class="img-fluid"
+          src="assets/BLACK_LOGO.png"
+          alt="TALEX логотип"
+        />
       </div>
+      <!-- <div class="some">
+        <img src="assets/power-energy-vector-emblem-electricity-flash-symbol-charge-or-danger-icon_87543-8011.avif" alt="">
+      </div> -->
       <!-- номер телефона -->
       <div class="number">
         <a href="tel:+79688005125">+7 (968) 800 - 51 - 25</a>
@@ -66,7 +73,7 @@
             дома, дачи или офиса - выбирайте нашу компанию для безопасности и
             современного дизайна!
           </p>
-          <img class="mainScreen" src="assets/scale_1200.jpg" alt="" />
+          <img class="mainScreen img-fluid" src="assets/sostav.jpg" alt="" />
           <p>
             Наша молодая компания специализируется на разработке и сборке
             электрических шкафов для домов, дач и офисов. Мы предлагаем надежные
@@ -77,13 +84,49 @@
             современным и удобным.
           </p>
         </article>
-        <article class="whatWeDo"><h2>спектр услуг</h2></article>
+        <hr class="breaker"/>
+        <!-- спектр услуг -->
+        <article class="whatWeDo">
+          <h2>СПЕКТР УСЛУГ</h2>
+          <div class="doCards">
+            <div class="doCard">
+              <div class="cardImg">
+                <img
+                  class="img-fluid"
+                  src="assets/electrician-1080573_1920.jpg"
+                  alt=""
+                />
+              </div>
+              <p class="cardText c">
+                Сборка электрощитов для квартир, дач, офисов!
+              </p>
+            </div>
+
+            <div class="doCard">
+              <div class="cardImg">
+                <img
+                  class="img-fluid"
+                  src="assets/electrician-499799_1920.jpg"
+                  alt=""
+                />
+              </div>
+              <p class="cardText c">
+                Проектирование, сборка и установка "умного дома"
+              </p>
+            </div>
+          </div>
+        </article>
+        <hr class="breaker"/>
         <article class="contacts"><h2>контакты</h2></article>
+        <hr class="breaker"/>
         <article class="writeUs"><h2>обратная связь</h2></article>
+        <hr class="breaker"/>
+        <!-- Где мы находимся -->
         <article class="location">
           <h2>где мы находимся</h2>
           <div id="map" style="width: 100%; height: 400px"></div>
         </article>
+        <hr class="breaker"/>
         <article class="projects">
           <h2>проекты</h2>
           <div id="Pcarousel" class="carousel slide" data-bs-ride="carousel">
@@ -136,7 +179,14 @@
             </button>
           </div>
         </article>
-        <article class="friends"><h2>Наши партнеры</h2></article>
+        <hr class="breaker"/>
+        <!-- партнеры -->
+        <article class="friends">
+          <h2>Наши партнеры</h2>
+          <!-- слайдер с партнерами и небольшим рекламным текстом -->
+        </article>
+        <hr class="breaker"/>
+        <!-- полезная информация (сертиификаты, акции )-->
         <article class="benifits"><h2>полезная информация</h2></article>
       </main>
     </section>
