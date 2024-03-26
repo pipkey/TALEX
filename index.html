@@ -17,6 +17,13 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <link
       rel="shortcut icon"
       href="assets/white_logo.ico"
@@ -31,6 +38,39 @@
     <!-- HEADER -->
     <header class="container">
       <!-- логотип -->
+      <div class="burger">
+        <div class="navWrapper">
+          <nav>
+            <ul class="nav nav-tabs">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  Меню сайта
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">О нас</a></li>
+                  <li><a class="dropdown-item" href="#">Спектр услуг</a></li>
+                  <li><a class="dropdown-item" href="#">Проекты</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">где мы находимся</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">партнеры</a></li>
+                  <li><a class="dropdown-item" href="#">обратная связь</a></li>
+                  <li><a class="dropdown-item" href="#">контаты</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">полезная информация</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
       <div class="logo">
         <img
           class="img-fluid"
@@ -38,9 +78,7 @@
           alt="TALEX логотип"
         />
       </div>
-      <!-- <div class="some">
-        <img src="assets/power-energy-vector-emblem-electricity-flash-symbol-charge-or-danger-icon_87543-8011.avif" alt="">
-      </div> -->
+
       <!-- номер телефона -->
       <div class="number">
         <a href="tel:+79688005125">+7 (968) 800 - 51 - 25</a>
@@ -48,22 +86,6 @@
     </header>
 
     <section class="container">
-      <div class="navWrapper">
-        <nav>
-          <ul>
-            <li class="nav_item">O нас</li>
-            <li class="nav_item">спектр услуг</li>
-            <li class="nav_item">проекты</li>
-            <li class="nav_item">где мы находимся</li>
-            <li class="nav_item">партнеры</li>
-            <li class="nav_item">обратная связь</li>
-            <li class="nav_item">контаты</li>
-            <li class="nav_item">
-              полезная информация<!--(сертификаты + достауки + акции )-->
-            </li>
-          </ul>
-        </nav>
-      </div>
       <main>
         <!-- О нас -->
         <article class="about">
@@ -74,7 +96,7 @@
             современного дизайна!
           </p>
           <img class="mainScreen img-fluid" src="assets/sostav.jpg" alt="" />
-          <p>
+          <p class="c">
             Наша молодая компания специализируется на разработке и сборке
             электрических шкафов для домов, дач и офисов. Мы предлагаем надежные
             и инновационные решения для вашего электрического оборудования,
@@ -84,18 +106,15 @@
             современным и удобным.
           </p>
         </article>
-        <hr class="breaker"/>
+        <hr class="breaker" />
         <!-- спектр услуг -->
         <article class="whatWeDo">
-          <h2>СПЕКТР УСЛУГ</h2>
+          <h2 class="c">СПЕКТР УСЛУГ</h2>
+
           <div class="doCards">
             <div class="doCard">
               <div class="cardImg">
-                <img
-                  class="img-fluid"
-                  src="assets/electrician-1080573_1920.jpg"
-                  alt=""
-                />
+                <img class="img-fluid" src="assets/010.jpg" alt="" />
               </div>
               <p class="cardText c">
                 Сборка электрощитов для квартир, дач, офисов!
@@ -104,11 +123,7 @@
 
             <div class="doCard">
               <div class="cardImg">
-                <img
-                  class="img-fluid"
-                  src="assets/electrician-499799_1920.jpg"
-                  alt=""
-                />
+                <img class="img-fluid" src="assets/smartHome.jpg" alt="" />
               </div>
               <p class="cardText c">
                 Проектирование, сборка и установка "умного дома"
@@ -116,82 +131,125 @@
             </div>
           </div>
         </article>
-        <hr class="breaker"/>
-        <article class="contacts"><h2>контакты</h2></article>
-        <hr class="breaker"/>
-        <article class="writeUs"><h2>обратная связь</h2></article>
-        <hr class="breaker"/>
-        <!-- Где мы находимся -->
-        <article class="location">
-          <h2>где мы находимся</h2>
-          <div id="map" style="width: 100%; height: 400px"></div>
+        <hr class="breaker" />
+        <!-- контакты -->
+        <article class="contacts">
+          <h2 class="c">Контакты</h2>
+          <div class="contacts_wrapper">
+             <div class="form_contact">
+              <div class="from_wrapper">
+                <h5>Заказать звонок</h5>
+                <form class="" action="" method="post">
+                  <div class="labels">
+                    <label for="name">Имя:</label>
+                    <label for="email">Email:</label>
+                    <label for="phone">Телефон:</label>
+                  </div>
+                  <div class="inputs">
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required><br><br>
+                    <input type="email" id="email" name="email" placeholder="Введите ваш email" required><br><br>
+                    <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" required><br><br>
+                    <input type="submit" id="sent" value="Отправить">
+                  </div>
+                  
+              </form>
+              </div>
+              <div class="contact_wrapper">
+                <h5 class="c">Можете связаться с нами <br/> самостоятельно</h5>
+                <div class="contact_item email">
+                  <img src="assets/contacts/email.png" alt="email"> <span>talex1511@mail.ru</span>
+                </div>
+                <div class="contact_item phone">
+                  <img src="assets/contacts/phone.png" alt="телефон"> <span>+7 (968) 800-51-25</span>
+                </div>
+                <div class="contact_item adress"> 
+                  <img src="assets/contacts/adress.png" alt="адрес"> <span> Московская область, г. Люберцы, д. Мотяково, д. 61/2.</span>
+                </div>
+                <div class="contact_item social">
+                    <!-- <img src="" alt="insta"/> -->
+                   <a href="https://t.me/talex2023" target="_blank">
+                    <img src="assets/contacts/tg.png" alt="TG"/> 
+                  </a>
+                </div>
+              </div>
+             </div> 
+            <div class="wrapper_map">
+              <div id="map" style="width: 100%; height: 400px"></div>
+            </div>
+          </div>
         </article>
-        <hr class="breaker"/>
+        <hr class="breaker" />
+
+
+        <!-- проекты -->
         <article class="projects">
           <h2>проекты</h2>
-          <div id="Pcarousel" class="carousel slide" data-bs-ride="carousel">
+        
+          </div>
+        </article>
+        <hr class="breaker" />
+
+        <!-- партнеры -->
+        <article class="friends">
+          <h2 class="c">Наши партнеры</h2>
+          <p class="c">
+            Мы рады сотрудничеству с такими уважаемыми партнерами, 
+            как <b>HITE PRO</b>, <b>ABB</b>, <b>IEK</b>, <b>TDM</b>, <b>ЭРА</b> и <b>DEKRAFT</b>. Наше партнерство с ведущими компаниями в индустрии демонстрирует нашу приверженность качеству, 
+            инновациям и успешному сотрудничеству. Мы ценим возможность работать с такими профессиональными и надежными партнерами, что позволяет нам предлагать 
+            клиентам лучшие решения и сервис высочайшего уровня. Благодарим наших партнеров за доверие и совместные усилия в достижении общих целей и успехов.
+          </p>
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img
-                  src="assets/white_full.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
+                <img src="assets/partners/1.png" class="d-block " alt="...">
               </div>
               <div class="carousel-item">
-                <img
-                  src="assets/white_full.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
+                <img src="assets/partners/2.png" class="d-block " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
               </div>
               <div class="carousel-item">
-                <img
-                  src="assets/white_full.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
+                <img src="assets/partners/3.png" class="d-block " alt="...">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/partners/4.png" class="d-block " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/partners/5.png" class="d-block " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/partners/6.png" class="d-block " alt="...">
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#Pcarousel"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#Pcarousel"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-        </article>
-        <hr class="breaker"/>
-        <!-- партнеры -->
-        <article class="friends">
-          <h2>Наши партнеры</h2>
           <!-- слайдер с партнерами и небольшим рекламным текстом -->
         </article>
-        <hr class="breaker"/>
+        <hr class="breaker" />
         <!-- полезная информация (сертиификаты, акции )-->
         <article class="benifits"><h2>полезная информация</h2></article>
       </main>
     </section>
-
+    <!-- footer -->
     <footer class="container">время работы</footer>
+
+
     <script
       src="https://api-maps.yandex.ru/2.1/?apikey=519a2ef0-e9cf-4255-be01-521af4eb8301&lang=ru_RU"
       type="text/javascript"
@@ -201,6 +259,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- swiper -->
     <script src="js/index.js"></script>
   </body>
 </html>
