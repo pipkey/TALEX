@@ -166,38 +166,76 @@ main {
   margin-top: 60px;
 }
 .doCards {
+  color: white;
+  font-weight: 500;
   padding-top: 60px;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-around; */
 }
 .doCard {
-  display: flex;
+  margin-bottom: 60px;
+  background-image: url(../assets/010.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
-.cardImg > img {
-  height: 400px;
-  width: 400px;
-  object-fit: cover;
+.doCard_smart{
+  background-image: url(../assets/smartHome.jpg);
+  background-size: cover;
+}
+.cardImg {
+background-color: rgba(0, 0, 0, .7);
+width: 100%;
+height: 100%;
 }
 
 .cardText {
 }
 
+/* projects */
+.slider_p {
+  /* margin: 0 auto; */
+  width: 100%;
+  overflow: hidden;
+}
+
+.slideP {
+  display: none;
+}
+
+.slideP img {
+  width: 100%;
+  height: auto;
+}
+
+.activeP {
+  display: block;
+}
+
 /* партнеры */
-.friends {
-  margin-top: 60px;
-  min-width: 0;
+.slider {
+  margin: 0 auto;
+  width: 35%;
+  overflow: hidden;
 }
-.carousel-item {
-  text-align: -webkit-center;
-  max-height: 270px;
+
+.slide {
+  display: none;
 }
-.carousel-item > img {
-  width: 270px;
-  height: 270px;
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.active {
+  display: block;
 }
 
 /* Контакты */
@@ -214,7 +252,6 @@ main {
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
- 
 }
 form {
   margin-top: 40px;
@@ -230,7 +267,7 @@ form {
   justify-content: center;
   border-radius: 20px;
 }
-.labels{
+.labels {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -238,30 +275,30 @@ form {
   gap: 55px;
   padding: 10px 10px 85px;
 }
-.inputs{
+.inputs {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-end;
   padding: 20px;
 }
-.inputs>input{
+.inputs > input {
   padding: 0 10px;
 }
-#sent{
+#sent {
   background-color: #3d3d3d;
   color: white;
   border: 0;
   padding: 10px;
   border-radius: 5px;
-  transition: .7s;
+  transition: 0.7s;
 }
-#sent:hover{
-  transition: .7s;
+#sent:hover {
+  transition: 0.7s;
   color: #ffcc00;
 }
 /* контакты*/
-.contact_wrapper{
+.contact_wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -276,7 +313,7 @@ form {
   width: 30px;
   height: auto;
 }
-.contact_item>span{
+.contact_item > span {
   margin-left: 20px;
 }
 
