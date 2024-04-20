@@ -20,7 +20,7 @@ h2 {
   font-weight: 700;
   color: white;
 }
-h5{
+h5 {
   font-size: 2rem;
 }
 p {
@@ -64,8 +64,9 @@ header {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
-article{
-  margin-top:60px ;
+
+article {
+  margin-top: 60px;
 }
 /* настройка и удаление стилей бутстрапа */
 .nav {
@@ -124,13 +125,15 @@ article{
 
 .number {
   font-size: 1.5rem;
+  display: flex;
+  flex-direction: column-reverse;
 }
-
+.time{
+  font-size: 1rem;
+  
+}
 /* Секция контента */
-section {
-  /* display: grid; */
-  /* grid-template-columns: 20% 80%; */
-}
+
 .navWrapper {
   position: relative;
 }
@@ -157,8 +160,7 @@ main {
   border-top-left-radius: 30px;
   background-color: #3d3d3d;
 }
-.main_img {
-}
+
 .mainScreen {
   width: 100%;
   height: auto;
@@ -201,10 +203,8 @@ main {
   font-size: 1.4rem;
   border-radius: 15px;
 }
-.card_anotation > ul {
-  
-}
-.card_anotation{
+
+.card_anotation {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -238,7 +238,10 @@ main {
 .slideP {
   width: 100%;
   display: none;
+  object-fit: contain;
+  height: 400px;
 }
+
 .slideP.activeP {
   display: block;
 }
@@ -283,6 +286,7 @@ main {
 /* Контакты */
 .form_contact {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   color: white;
@@ -351,11 +355,17 @@ input {
   width: 150px;
 }
 
-.wrapper_map{
+.wrapper_map {
   color: white;
 }
-.wrapper_map> .card_title{
+.wrapper_map > .card_title {
   margin-bottom: 40px;
+}
+
+
+/* полезная информация */
+.benifits{
+  color: white;
 }
 /* подвал сайта */
 footer {
