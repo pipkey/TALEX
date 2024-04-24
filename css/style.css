@@ -64,17 +64,6 @@ header {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
-/* настройка бургер меню*/
-/* .nav-link .dropdown-toggle{
-  width: 100px;
-  height: 80px;
-  border: 1px solid black;
-} */
-.burger_line{
-width: 100%;
-height: 8px;
-background-color: black;
-}
 
 article {
   margin-top: 60px;
@@ -139,9 +128,8 @@ article {
   display: flex;
   flex-direction: column-reverse;
 }
-.time{
+.time {
   font-size: 1rem;
-  
 }
 /* Секция контента */
 
@@ -185,7 +173,7 @@ main {
 .doCards {
   color: white;
   font-weight: 500;
-  padding-top: 60px;
+  padding: 60px 40px;
 }
 .doCard {
   border-radius: 40px;
@@ -328,7 +316,11 @@ form {
 }
 
 input {
+  margin-top: 10px;
   padding: 0 10px;
+  height: 40px;
+  border-radius: 10px;
+  border:0;
 }
 #sent {
   background-color: #3d3d3d;
@@ -372,13 +364,46 @@ input {
 .wrapper_map > .card_title {
   margin-bottom: 40px;
 }
-
-
+.onTheMap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* полезная информация */
-.benifits{
+.benifits {
   color: white;
+ 
+}
+.benefits_card_wrapper{
+  padding: 60px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap :30px;
+}
+.benefits_seals{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  border: 1px solid #ffcc00;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.seals_title{
+  font-weight: 700;
+  margin: 20px;
+  font-size: 1.4rem;
 }
 /* подвал сайта */
 footer {
   border: 1px solid rgb(221, 255, 142);
+  background-color: #3d3d3d;
+  color: white;
+}
+.footer_item > a > img{
+  width: 120px;
+  height: 120px;
 }
