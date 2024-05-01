@@ -23,8 +23,9 @@ h2 {
 h5 {
   font-size: 2rem;
 }
+
 p {
-  font-size: 1.4rem;
+  font-size: 1.7vw;
   padding: 40px;
   color: white;
 }
@@ -32,11 +33,13 @@ a {
   color: white;
   text-decoration: none;
   transition: all 1s;
+  font-size: 2vw;
 }
 a:hover {
   transition: all 1s;
   color: yellow;
 }
+
 .c {
   text-align: center;
 }
@@ -193,7 +196,7 @@ main {
 .cardImg {
   border-radius: 40px;
   padding: 60px;
-  background-color: rgba(68, 75, 84, 0.7);
+  background-color: rgba(68, 75, 84, 0.9);
   width: 100%;
 }
 .anot_title {
@@ -224,43 +227,6 @@ main {
 }
 
 /* projects */
-.sliderP {
-  position: relative;
-  width: 60%;
-  margin: 0 auto;
-  overflow: hidden;
-  text-align: center;
-}
-.slidesP {
-  display: flex;
-}
-.slideP {
-  width: 100%;
-  display: none;
-  object-fit: contain;
-  height: 400px;
-}
-
-.slideP.activeP {
-  display: block;
-}
-.paginationP {
-  text-align: center;
-  margin-top: 10px;
-}
-.dotP {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #333;
-  margin: 0 5px;
-  cursor: pointer;
-}
-.dotP.activeP {
-  background-color: #ffcc00;
-  border: #3d3d3d 1px solid;
-}
 
 /* партнеры */
 .slider {
@@ -399,11 +365,61 @@ input {
 }
 /* подвал сайта */
 footer {
-  border: 1px solid rgb(221, 255, 142);
   background-color: #3d3d3d;
   color: white;
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.3);
+}
+.footer_wrapper{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer_item{
+  display: flex;
+  flex-direction: column;
+}
+.gap{
+  gap: 20px;
 }
 .footer_item > a > img{
   width: 120px;
   height: 120px;
+}
+
+/* media */
+
+@media screen and (max-width: 768px) {
+  a,p, .time{
+    font-size: 3vw;
+  }
+  
+}
+
+@media screen and (max-width: 575px) {
+  .footer_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .logo > img {
+    height: 100px;
+    width: 120px;
+ }
+ p{
+  padding: 0;
+}
+.cardImg{
+  padding: 20px;
+}
+}
+@media screen and (max-width: 375px) {
+  a,p, .time{
+    font-size: 4vw;
+  }
 }
